@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: skyblue;
+      }
+
+      .login-container {
+        width: 300px;
+        margin: 100px auto;
+        padding: 20px;
+        background: white;
+        color: cadetblue;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: rebeccapurple;
+      }
+    </style>
+    <script src="validation.js"></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+
+      <form action="events.html" method="post" id="loginForm" onsubmit="return validate()">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+
+        <!--<button type="submit" id="loginBtn">Submit</button> used for comment in HTML-->
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>
